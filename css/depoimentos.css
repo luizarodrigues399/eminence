@@ -1,0 +1,62 @@
+.depoimentos{
+    background-image: url("../img/background.png");
+    background-size: cover;
+    padding: 3em 0;
+}
+
+.depoimentos h1{
+    padding: 1em 0;
+    text-align: center;
+ }
+
+.depoimentos .cards{
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    padding: 2em 0;
+}
+
+.depoimentos .card{
+    background-color: white;
+    border-radius: 15px;
+    width: 40%;
+    padding: 20px;
+    color:black;
+    cursor: pointer;
+ }
+
+ .depoimentos .card:hover{
+    box-shadow: 1px 2px 3px 4px rgba(253, 252, 252, 0.4);
+ }
+
+.depoimentos .card-detalhes{
+    display: flex;
+    gap: 1em;
+}
+
+.depoimentos .card-nome{
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.depoimentos .card-infos{
+    color: var(--cinza);
+}
+
+.depoimentos .card-estrelas, 
+.depoimentos .card-avaliacao, 
+.depoimentos .card-estrela-texto{
+    padding-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .depoimentos .cards{
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5em 0;
+    }
+
+    .depoimentos .card{
+        width: 80%;
+    }
+}

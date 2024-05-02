@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Eminence - english school</title>
+
+  <meta name="author" content="Luiza Rodrigues">  
+
+  <meta name="description" content="Escola de idiomas com professor nativo para aprende inglês e sair do 'enrolation'. ">
+
+  <meta name="keywords" content="escola de inglês, inglês, escola, idioma, english, school, learning, aprender, aluno, professor, teacher">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="UTF-8">
+
+  <meta name="robots" content="index, follow"> <!--sintaxe mais comum de meta robots - orienta os buscadores 
+    a indexar o conteúdo da página e seguir todos os links para descobrir novas páginas -->
+
+  <link rel="stylesheet" href="./dist/index.f39e7a8c.css" > <!--href="./css/index.css">-->
+
+  <!--<link rel="stylesheet" href="./css/global.css">
+
+  <link rel="stylesheet" href="./css/navbar.css">
+
+  <link rel="stylesheet" href="./css/sidebar.css">
+
+  <link rel="stylesheet" href="./css/banner_principal.css">
+
+  <link rel="stylesheet" href="./css/sobre_curso.css">
+
+  <link rel="stylesheet" href="./css/quem_somos.css">
+
+  <link rel="stylesheet" href="./css/outros_servicos.css">
+
+  <link rel="stylesheet" href="./css/quem_somos.css">
+
+  <link rel="stylesheet" href="./css/faq.css">
+
+  <link rel="stylesheet" href="./css/depoimentos.css">
+
+  <link rel="stylesheet" href="./css/banner_chamativo_final.css">
+
+  <link rel="stylesheet" href="./css/footer.css">-->
+
+  <link rel="icon" href="favicon.png" type="image/png"/>
+
+  <script src="https://kit.fontawesome.com/85bb8db988.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+  <!--<link rel = "canonical" href = "https://seusite.com.br" />-->
+
+  <script src="js/global.js"></script>
+
+</head>
+
+  <body>
+    <header>
+        <nav class='navbar'>
+          <img alt="logo Eminence" src="./img/navbar.png">
+
+          <ul>
+            <li><a href="#void" onclick="irParaElemento('sobre-curso')">Curso</a></li>
+
+            <li><a href="#void" onclick="irParaElemento('outros-servicos')">Demais Serviços</a></li>
+
+            <li><a href="#void" onclick="irParaElemento('quem-somos')">Quem Somos</a></li>
+
+            <li><a href="#void" onclick="irParaElemento('depoimentos')">Depoimentos</a></li>
+
+            <li><a href="#void" onclick="irParaElemento('faq')">Perguntas Frequentes</a></li>
+
+            <li>
+              <button type="button" onclick="direcionarWhatsapp()">COMECE AGORA!!!</button>
+            </li>
+          </ul>
+
+          <div class="sidebar-botao">
+            <button type="button" onclick="toggleSidebar()">☰</button>
+          </div>
+          
+        </nav>
+    </header>
+
+    <aside class="sidebar">
+        <ul>
+          <li><a href="#void" onclick="irParaElementoEFechar('sobre-curso')">Curso</a></li>
+
+          <li><a href="#void" onclick="irParaElementoEFechar('outros-servicos')">Demais Serviços</a></li>
+
+          <li><a href="#void" onclick="irParaElementoEFechar('quem-somos')">Quem Somos</a></li>
+
+          <li><a href="#void" onclick="irParaElementoEFechar('depoimentos')">Depoimentos</a></li>
+
+          <li><a href="#void" onclick="irParaElementoEFechar('faq')">Perguntas Frequentes</a></li>
+
+          <li>
+            <button type="button" onclick="direcionarWhatsapp()">COMECE AGORA!!!</button>
+          </li>
+        </ul>
+    </aside>
+
+    <section class="banner-principal">
+      <article>
+          <h1>SAIA DO ENROLATION:</h1>
+          <h1>APRENDA INGLÊS COM PROFESSOR NATIVO!</h1>
+          <h2>Aulas particulares!</h2> 
+          <button type="button" onclick="direcionarWhatsapp()">
+            <h1>COMECE AGORA!!!</h1>
+          </button>
+      </article>
+    </section>
+
+   <section class="sobre-curso">
+      <div class="container">
+        <h1>O NOSSO CURSO</h1>
+
+        <div>
+            <div class="sobre-curso-texto">
+              <h3>Aulas particulares de inglês com duração de 1 hora por aula, com um método 100% baseado em conversação.</h3>
+            
+              <h3>Material incluso para melhor fixação do inglês. Aulas ocorrem de forma online, com muito dinamismo e horários extremamente flexíveis.</h3>
+              
+              <h3>Aula para todos os niveis, desde iniciante, intermediário ou avançado.</h3>
+
+              <h3>Aula para adolescentes e adultos, idade a partir de 15 anos.</h3>
+
+            </div>
+            <div class="sobre-curso-imagens">
+              <img src="./img/curso1.jpg" alt="foto exemplo do curso"/>
+              <img src="./img/curso2.jpg" alt="foto exemplo do curso"/>
+            </div>
+        </div>
+      </div>
+
+    </section>
+     
+    <section class="outros-servicos">
+      <h1>EXPANDA SEU INGLÊS</h1>
+
+      <div class="outros-servicos-background-secundaria">
+        <div class="container">
+          <div class="cards">
+            <div class="card">
+              <img src="./img/servico2.png" alt="imagem para TOEFL e IELTS">
+              <div class="card-text">
+                <h3>Preparação para TOEFL, IELTS e demais provas</h3> 
+              </div>
+            </div> 
+
+            <div class="card">
+              <img src="./img/servico1.png" alt="imagem para inglês técnico">
+              <div class="card-text">
+                <h3>Inglês técnico para profissionais</h3> 
+              </div>
+            </div> 
+
+            <div class="card">
+              <img src="./img/servico3.png" alt="imagem para interprete e tradução">
+              <div class="card-text">
+                <h3>Tradução e interprete</h3> 
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quem-somos">
+      <div class="container">
+        <h1>QUEM SOMOS</h1>
+
+        <div class="professor1">
+          <div class="quem-somos-texto">
+            <h3>Collins Emeritus é um professor nativo de descendência americana e africana, vindo diretamente dos Estados Unidos. 
+              Passou a vida toda nos Estados Unidos, mas há 9 anos escolheu o Brasil como nova moradia. </h3>
+              
+            <h3>Ensinou a fluência em inglês para mais de 70 alunos brasileiros ao longo dos anos que aqui esteve.</h3> 
+              
+            <h3>Além de ser professor de inglês, também é cantor. 
+                Muito paciente e alegre, cativa as pessoas com sua simpatia</h3>
+              
+            <h3>Por possuir ligações com a University of Maryland em Baltimore County (UMBC), ao final do curso fornece certificados baseado nessa famosa faculdade para alunos que chegarem ao nível avançado.</h3>
+          </div>
+
+          <div class="quem-somos-imagem">
+            <img src="./img/professor1.png" alt="professor Collins">
+          </div>
+          
+        </div>
+
+        <hr>
+
+        <div class="professor2">
+          <div class="quem-somos-imagem">
+            <img src="./img/professor2.png" alt="professora Debora">
+          </div>
+
+          <div class="quem-somos-texto">
+            <h3>Débora Silveira chegou para somar no Eminence English School! </h3>
+
+            <h3>Professora há um ano pela escola, viaja frequentemente para os Estados Unidos para se atualizar a 
+              respeito de todas as tendências da linguagem, desde expressões idiomáticas, gírias e linguagens do 
+              dia-a-dia.  Poliglota, também é fluente em italiano. </h3>
+
+            <h3>Nas horas vagas, toca piano e canta.</h3>
+
+            <h3>Suas aulas são dinâmicas, fortemente baseadas em conversação.</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <h1>PERGUNTAS FREQUENTES</h1>
+
+        <div id="pergunta1">
+          <button type="button" class="pergunta">
+            Posso fazer uma aula experimental antes de ingressar no curso?
+          </button>
+
+          <div class="pergunta-conteudo">
+            <p>Sim! É possível fazer aula experimental, com custo de R$100.</p>
+          </div>
+        </div>
+
+        <div id="pergunta2">
+          <button type="button" class="pergunta">
+            Qual a idade mínima para fazer o curso de inglês?
+          </button>
+
+          <div class="pergunta-conteudo">
+            <p>A idade mínima para fazer o curso é de 15 anos.</p> </div>
+        </div>
+
+        <div id="pergunta3">
+          <button type="button" class="pergunta">
+            Existe uma duração para concluir meu aprendizado de inglês com vocês ou passar de nível?
+          </button>
+
+          <div class="pergunta-conteudo">
+            <p>Cada pessoa tem seu próprio ritmo de aprendizado, bagagem anterior de inglês, disponibilidade para fazer 
+              as aulas e esforço próprio, portanto o avanço varia de pessoa para pessoa, não sendo possível comparar 
+              esses esforços para dar um tempo de conclusão EXATO, porém em pouco tempo com as nossas aulas costumamos
+              ver um bom avanço dos alunos.
+            </p>
+          </div>
+        </div>
+
+        <div id="pergunta4">
+          <button type="button" class="pergunta">
+            Vocês aplicam prova avaliativa para testar meu avanço?
+          </button>
+
+          <div class="pergunta-conteudo">
+            <p>Não aplicamos provas avaliativas, porém podemos passar atividades para o aluno 
+              fazer em casa para fixar melhor o conhecimento.
+              Aplicamos apenas a prova final, de conclusão do curso, prova essa em parceria com a UMBC (University of
+              Maryland, Baltimore County) que disponibiliza um certificado de proficiência na língua inglesa. </p> </div>
+        </div>
+
+        <div id="pergunta5">
+          <button type="button" class="pergunta">
+            Quais as formas de pagamento aceitas?
+          </button>
+
+          <div class="pergunta-conteudo">
+            <p>Aceitamos cartao de crédito, débito, pix e boleto.</p> 
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+
+    <section class="depoimentos">
+      <div class="container">
+        <h1>DEPOIMENTOS</h1>
+
+        <div class="cards">
+          <!------------------- RACHELLE ---------------------->
+          <div class="card" onclick="direcionarGoogleMapsAvaliacoes('rachele')">
+            <div class="card-detalhes">
+              <div class="card-imagem">
+                <img src="./img/depoimentos/rachelle.png" alt="foto da cliente Rachelle"/>
+              </div>
+              <div class="card-texto">
+                <p class="card-nome">Rachele Mai da Silva Cheibub</p>
+                <p class="card-infos">12 avaliações • 3 fotos</p>
+              </div>
+            </div>
+
+            <div class="card-estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="card-estrela-texto">um ano atrás</span>
+            </div>
+
+            <p class='card-avaliacao'>Comecei a fazer aulas várias vezes e nunca me adaptei, 
+              mas com o Collins estou amando! Agora eu sei que vou aprender! Recomendo muito! Ótimo…</p>
+          </div>
+
+          <!------------------- ROSE BARBOSA ---------------------->
+          <div class="card" onclick="direcionarGoogleMapsAvaliacoes('rose')">
+            <div class="card-detalhes">
+              <div class="card-imagem">
+                <img src="./img/depoimentos/rose.png" alt="foto da cliente Rose"/>
+              </div>
+              <div class="card-texto">
+                <p class="card-nome">Rose Barbosa</p>
+                <p class="card-infos">3 avaliações</p>
+              </div>
+            </div>
+
+            <div class="card-estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="card-estrela-texto">um ano atrás</span>
+            </div>
+
+            <p class='card-avaliacao'>Meu filho faz aulas com o professor Collins e sua didática é excelente. 
+              Uma pessoa alegre, sabe muito inglês,sempre bem humorado é um exemplo de profissional.  
+              Recomendo 👏👏👏 …</p>
+          </div>
+        </div>
+
+        <div class="cards">
+          <!------------------- GIL BARBOSA ---------------------->
+          <div class="card" onclick="direcionarGoogleMapsAvaliacoes('gil')">
+            <div class="card-detalhes">
+              <div class="card-imagem">
+                <img src="./img/depoimentos/gil.png" alt="foto do cliente Gil"/>
+              </div>
+              <div class="card-texto">
+                <p class="card-nome">Gil Barbosa</p>
+                <p class="card-infos">2 avaliações</p>
+              </div>
+            </div>
+
+            <div class="card-estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="card-estrela-texto">um ano atrás</span>
+            </div>
+
+            <p class='card-avaliacao'>
+              Muito gente boa ,meu filho  Davi esta aprendendo muito com ele !!!👏👏👏 …
+            </p>
+          </div>
+
+          <!------------------- POVINHA ---------------------->
+          <div class="card" onclick="direcionarGoogleMapsAvaliacoes('povinha')">
+            <div class="card-detalhes">
+              <div class="card-imagem">
+                <img src="./img/depoimentos/povinha.png" alt="foto da cliente Povinha"/>
+              </div>
+              <div class="card-texto">
+                <p class="card-nome">Povinha Gamer</p>
+                <p class="card-infos">3 avaliações • 6 fotos</p>
+              </div>
+            </div>
+
+            <div class="card-estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="card-estrela-texto">um ano atrás</span>
+            </div>
+
+            <p class='card-avaliacao'>Muito bom curso com professor collins pessoa maravilhosa eu 
+              Adriana e minha famila adoramos fazer curso c ele extraordinário  exelente professor</p>
+          </div>
+        </div>
+
+
+        <div class="cards">
+          <!------------------- HUMBERTO ---------------------->
+          <div class="card" onclick="direcionarGoogleMapsAvaliacoes('humberto')">
+            <div class="card-detalhes">
+              <div class="card-imagem">
+                <img src="./img/depoimentos/humberto.png" alt="foto do cliente Humberto"/>
+              </div>
+              <div class="card-texto">
+                <p class="card-nome">Humberto Moreira</p>
+                <p class="card-infos">1 avaliação</p>
+              </div>
+            </div>
+
+            <div class="card-estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="card-estrela-texto">dois anos atrás</span>
+            </div>
+
+            <p class='card-avaliacao'>
+              Professora excelente, recomendo!
+            </p>
+          </div>
+
+          <!------------------- GIZELI ---------------------->
+          <div class="card" onclick="direcionarGoogleMapsAvaliacoes('gizeli')">
+            <div class="card-detalhes">
+              <div class="card-imagem">
+                <img src="./img/depoimentos/gizeli.png" alt="foto da cliente Gizeli"/>
+              </div>
+              <div class="card-texto">
+                <p class="card-nome">Gizeli Cristina Psicóloga</p>
+                <p class="card-infos">Local Guide · 29 avaliações · 24 fotos</p>
+              </div>
+            </div>
+
+            <div class="card-estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="card-estrela-texto">dois anos atrás</span>
+            </div>
+
+            <p class='card-avaliacao'>Excelente profissional! Sabe muito !</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="banner-chamativo-final">
+      <button type="button" onclick="direcionarWhatsapp()">
+        <h1>
+          APRENDA INGLÊS DE VERDADE!<br>
+          ENTRE EM CONTATO CONOSCO!!!
+        </h1>
+      </button>
+    </section>
+
+    <footer>
+      <div class="container">
+        <img alt="logo" src="./img/logo2.png" />
+        
+        <div class="redes-sociais">
+          <h2>SIGA-NOS NAS NOSSAS REDES SOCIAIS:</h2>
+
+          <ul>
+            <li>
+              <span class="fa-stack fa-2x" onclick='direcionarInstagram()'>
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa-brands fa-instagram fa-stack-1x"></i>
+              </span>              
+            </li>
+            <li>
+              <span class="fa-stack fa-2x">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa-brands fa-facebook-f fa-stack-1x"></i>
+                <span class="fita">em breve</span>
+              </span>
+            </li>
+            <li>
+              <span class="fa-stack fa-2x">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa-brands fa-tiktok fa-stack-1x"></i>
+                <span class="fita">em breve</span>
+              </span>
+            </li>
+            <li>
+              <span class="fa-stack fa-2x">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa-brands fa-linkedin-in fa-stack-1x"></i>
+                <span class="fita">em breve</span>
+              </span>  
+            </li>
+            <li>
+              <span class="fa-stack fa-2x">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa-brands fa-x-twitter fa-stack-1x"></i>
+                <span class="fita">em breve</span>
+              </span>  
+            </li>
+            <li>
+              <span class="fa-stack fa-2x">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa-brands fa-youtube fa-stack-1x"></i>
+                <span class="fita">em breve</span>
+              </span>  
+            </li>
+          </ul>
+
+          <p>Eminence @ 2024 Todos os direitos reservados</p>
+        </div>
+        
+      </div>
+      
+    </footer>
+  </body>
+</html>

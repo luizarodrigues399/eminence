@@ -1,0 +1,83 @@
+.navbar {
+    background-color: var(--vermelho);
+    justify-content: space-between;
+    display: flex;
+    font-size: 1em;
+    height: 7rem;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    padding: 0px 10px;
+}
+
+.navbar li a{
+    transition: 0.5s;
+    text-decoration-color: transparent;
+    text-underline-offset: 10px;
+}
+
+.navbar li a:hover {
+    text-decoration-color: white;
+}
+
+.navbar ul button{
+    transition: 0.5s;
+    border: solid 1px white;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: bold;
+    color: var(--vermelho);
+}
+
+.navbar ul button:hover{
+    background-color: var(--vermelho);
+    color: white;
+    cursor: pointer;
+}
+
+.navbar img{
+    height: 100px;
+}
+
+.navbar .sidebar-botao {
+    display: none;
+    margin: 2em;
+}
+
+.navbar .sidebar-botao button {
+    font-size: 2.5em;
+    cursor: pointer;
+    background-color: var(--vermelho);
+    border: solid white;
+    color: white;
+    border-radius: 10px;
+}
+  
+.navbar .sidebar-botao button:hover {
+    background-color: white;
+    color: var(--vermelho);
+}
+
+@media (max-width: 1230px) {
+    .navbar img {
+        content:url("../img/logo2.png");
+        margin: 5px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar ul{
+        display: none;
+    }
+
+    .navbar .sidebar-botao {
+        display: initial;
+    }
+}

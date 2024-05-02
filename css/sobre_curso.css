@@ -1,0 +1,45 @@
+.sobre-curso{
+    background-image: url("../img/background.png");
+    background-size: cover;
+}
+
+.sobre-curso h1{
+    padding: 1em 0;
+}
+
+.sobre-curso .container > div{
+    display: flex;
+}
+
+.sobre-curso .sobre-curso-imagens{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px 0;
+    max-width: 500px;
+    gap:20px;
+}
+
+.sobre-curso img{
+    max-width:70%;
+}
+
+.sobre-curso .sobre-curso-texto h3{
+        padding: 20px 0;
+}
+
+@media (max-width: 1200px) {
+    .sobre-curso .container > div{
+        flex-direction: column;
+    }
+
+    .sobre-curso .sobre-curso-imagens{
+        flex-direction: row;
+        justify-content: center;
+        max-width: none;
+    }
+
+    .sobre-curso img{
+        max-width:35%;
+    }
+}

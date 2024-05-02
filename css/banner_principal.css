@@ -1,0 +1,44 @@
+.banner-principal{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("../img/banner-principal.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.banner-principal button{
+    transition: 0.5s;
+    border: solid 1px white;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: bold;
+    color: var(--vermelho);
+    text-align: center;
+}
+
+.banner-principal button:hover{
+    background-color: var(--vermelho);
+    color: white;
+    cursor: pointer;
+}
+
+.banner-principal article{
+    text-align: center;
+    max-width: 500px;
+    background-color: var(--cinza-apagado);
+    padding: 20px 10px;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+
+.banner-principal h1{
+    font-weight: bold;
+}
+
+.banner-principal h2{
+    padding: 20px 0px;
+}

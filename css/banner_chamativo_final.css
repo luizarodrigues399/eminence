@@ -1,0 +1,30 @@
+.banner-chamativo-final{
+    background-image: url("../img/banner-principal.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 10em;
+}
+
+.banner-chamativo-final button{
+    background-color: white;
+    border: solid salmon;
+    border-radius: 15px;
+    padding: 40px;
+    color: var(--vermelho);
+    transition: 0.5s;
+}
+
+.banner-chamativo-final button:hover{
+    background-color: var(--vermelho);
+    color: white;
+    cursor: pointer;
+}
+
+
+@media (max-width: 992px) {
+    .banner-chamativo-final{
+        padding: 4em;
+    }
+}
+

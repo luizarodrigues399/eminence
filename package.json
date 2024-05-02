@@ -1,0 +1,14 @@
+{
+  "name": "eminence",
+  "version": "1.0.0",
+  "description": "website para escola de inglês",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "luiza rodrigues",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}

@@ -1,0 +1,37 @@
+.faq{
+    color: var(--azul-escuro);
+    padding: 3em;
+}
+
+.faq h1{
+    padding-bottom: 2em;
+    text-align: center;
+ }
+
+ .faq .pergunta {
+    box-shadow: 1px 2px 3px 4px rgb(0 0 0 / 40%);
+    background-color: white;
+    border: var(--azul-escuro);
+    color: var(--azul-escuro);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1.5em;
+    width: 100%;
+    text-align: left;
+    margin: 1em 0;
+    font-size: 18px;
+    border-radius: 15px;
+  }
+  
+  .faq .pergunta-ativa, .faq .pergunta:hover {
+    background-color: var(--cinza-claro);
+  }
+  
+  .faq .pergunta-conteudo {
+    padding: 20px 5px;
+    display: none;
+  }
+
+  .faq p {
+    line-height: 30px;
+  }

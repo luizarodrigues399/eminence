@@ -1,0 +1,61 @@
+.quem-somos{
+    background-image: url("../img/background.png");
+    background-size: cover;
+    padding-bottom: 3em; 
+}
+
+.quem-somos h1{
+    padding: 2em 0;
+}
+
+.quem-somos hr{
+    margin: 3em auto;
+    width: 400px;
+}
+
+.quem-somos .professor1, .quem-somos .professor2{
+    max-width: 2000px;
+    display: flex;
+    gap: 5em;
+}
+
+.quem-somos .quem-somos-imagem{
+    text-align: center;
+    width: 30%;
+}
+
+.quem-somos img{
+    height: 500px;
+    padding-top: 20px;
+}
+
+.quem-somos h3{
+    padding: 20px 0px;
+}
+
+
+@media (max-width: 768px) {
+    .quem-somos .professor1{
+        flex-direction: column;
+    }
+
+    .quem-somos .professor1, .quem-somos .professor2{
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    .quem-somos .professor2{
+        flex-direction: column-reverse;
+        
+    }
+
+    .quem-somos .quem-somos-imagem{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .quem-somos hr{
+        width: 200px;
+    }
+}
