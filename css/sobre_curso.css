@@ -28,6 +28,24 @@
         padding: 20px 0;
 }
 
+.sobre-curso button{
+    transition: 0.5s;
+    border: solid 1px white;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: bold;
+    color: var(--vermelho);
+    text-align: center;
+}
+
+.sobre-curso button:hover{
+    background-color: var(--vermelho);
+    color: white;
+    cursor: pointer;
+}
+
+
 @media (max-width: 1200px) {
     .sobre-curso .container > div{
         flex-direction: column;

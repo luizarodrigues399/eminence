@@ -15,6 +15,10 @@ window.onload = () => {
     }
 }
 
+function irParaHotmart(){
+    window.open("https://hotmart.com/en/marketplace/products/ingles-com-prof-nativo-baseado-em-conversacao/S92883650C", "_blank");
+}
+
 function irParaElemento(nomeClasse){
 
     document.querySelector(`.${nomeClasse}`).scrollIntoView();
